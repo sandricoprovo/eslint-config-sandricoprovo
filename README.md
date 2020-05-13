@@ -26,7 +26,7 @@ If you want to install this configuration in your next project, follow the steps
 Install the dependencies
 
 ```javascript
-  npm install-peerdeps --dev eslint-config-sandricoprovo
+  npx install-peerdeps --dev eslint-config-sandricoprovo
 ```
 
 **Step 2:**
