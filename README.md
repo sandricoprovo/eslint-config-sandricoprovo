@@ -15,7 +15,7 @@ Here's how I have this set up currently:
 
 To see what packages I've installed check out my [package.json](package.json) file!
 
-**Example**
+Here's an example gif of what the linting looks like on save.
 ![A GIF of Eslint & Prettier linting my code.](images/eslint-prettier-autofix.gif)
 
 ### Install
