@@ -6,6 +6,7 @@ module.exports = {
     ecmaFeatures: {
       impliedStrict: true,
       classes: true,
+      jsx: true,
     },
   },
   env: {
@@ -19,12 +20,7 @@ module.exports = {
     'no-alert': 0,
     'no-await-in-loop': 0,
     'no-return-assign': ['error', 'except-parens'],
-    'no-restricted-syntax': [
-      2,
-      'ForInStatement',
-      'LabeledStatement',
-      'WithStatement',
-    ],
+    'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'no-unused-vars': [
       1,
       {
@@ -96,7 +92,8 @@ module.exports = {
       {
         trailingComma: 'es5',
         singleQuote: true,
-        printWidth: 80,
+        printWidth: 100,
+        bracketSpacing: true,
       },
     ],
     'jsx-a11y/href-no-hash': 'off',
@@ -108,6 +105,7 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/prop-types': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
+  plugins: ['html', 'prettier', 'react', 'react-hooks'],
 };
