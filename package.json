@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sandricoprovo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint and Prettier Config customized by Sandrico Provo",
   "main": "index.js",
   "author": "Sandrico Provo",
@@ -22,7 +22,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "publish": "npm publish --access public"
   },
   "peerDependencies": {
     "babel-eslint": "^10.1.0",
