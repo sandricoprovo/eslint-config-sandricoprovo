@@ -20,7 +20,12 @@ module.exports = {
     'no-alert': 0,
     'no-await-in-loop': 0,
     'no-return-assign': ['error', 'except-parens'],
-    'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+    'no-restricted-syntax': [
+      2,
+      'ForInStatement',
+      'LabeledStatement',
+      'WithStatement',
+    ],
     'no-unused-vars': [
       1,
       {
@@ -47,13 +52,24 @@ module.exports = {
         props: false,
       },
     ],
+    'max-len': [
+      'warn',
+      {
+        code: 80,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
     'no-console': 0,
     'import/prefer-default-export': 0,
     import: 0,
     'func-names': 0,
     'space-before-function-paren': 0,
     'comma-dangle': 0,
-    'max-len': 0,
     'import/extensions': 0,
     'no-underscore-dangle': 0,
     'consistent-return': 0,
@@ -92,8 +108,11 @@ module.exports = {
       {
         trailingComma: 'es5',
         singleQuote: true,
-        printWidth: 100,
+        printWidth: 80,
         bracketSpacing: true,
+        // Helps with Windows users facing CLRF eslint/prettier error
+        endOfLine: 'auto',
+        jsxBracketSameLine: false,
       },
     ],
     'jsx-a11y/href-no-hash': 'off',
