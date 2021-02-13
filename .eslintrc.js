@@ -20,12 +20,7 @@ module.exports = {
     'no-alert': 0,
     'no-await-in-loop': 0,
     'no-return-assign': ['error', 'except-parens'],
-    'no-restricted-syntax': [
-      2,
-      'ForInStatement',
-      'LabeledStatement',
-      'WithStatement',
-    ],
+    'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'no-unused-vars': [
       1,
       {
@@ -55,7 +50,7 @@ module.exports = {
     'max-len': [
       'warn',
       {
-        code: 80,
+        code: 100,
         ignoreComments: true,
         ignoreTrailingComments: true,
         ignoreUrls: true,
@@ -81,6 +76,7 @@ module.exports = {
     'react/no-unescaped-entities': 0,
     'jsx-a11y/accessible-emoji': 0,
     'react/require-default-props': 0,
+    'react/jsx-props-no-spreading': 'warn',
     'react/jsx-filename-extension': [
       1,
       {
@@ -108,7 +104,7 @@ module.exports = {
       {
         trailingComma: 'es5',
         singleQuote: true,
-        printWidth: 80,
+        printWidth: 100,
         bracketSpacing: true,
         // Helps with Windows users facing CLRF eslint/prettier error
         endOfLine: 'auto',
