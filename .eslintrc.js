@@ -123,4 +123,22 @@ module.exports = {
     'react/prop-types': 'warn',
   },
   plugins: ['html', 'prettier', 'react', 'react-hooks'],
+  // Typescript Config
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'airbnb',
+        'prettier',
+        'prettier/react',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: '/tsconfig.json',
+      },
+      plugins: ['@typescript-eslint'],
+    },
+  ],
 };
