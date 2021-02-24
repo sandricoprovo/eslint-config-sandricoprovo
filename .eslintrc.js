@@ -78,9 +78,9 @@ module.exports = {
         'react/require-default-props': 0,
         'react/jsx-props-no-spreading': 'warn',
         'react/jsx-filename-extension': [
-            1,
+            2,
             {
-                extensions: ['.js', '.jsx'],
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
             },
         ],
         radix: 0,
@@ -130,17 +130,56 @@ module.exports = {
         {
             files: ['*.ts', '*.tsx'],
             extends: [
-                'airbnb',
+                // 'airbnb',
                 'prettier',
                 'prettier/react',
+                'prettier/@typescript-eslint',
+                'plugin:import/typescript',
                 'plugin:@typescript-eslint/recommended',
                 'plugin:@typescript-eslint/recommended-requiring-type-checking',
             ],
             parser: '@typescript-eslint/parser',
-            parserOptions: {
-                project: '/tsconfig.json',
+            settings: {
+                react: {
+                    version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
+                },
             },
-            plugins: ['@typescript-eslint'],
+            parserOptions: {
+                project: './tsconfig.json',
+                ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
+                sourceType: 'module', // Allows for the use of imports
+                ecmaFeatures: {
+                    jsx: true, // Allows for the parsing of JSX
+                },
+            },
+            rules: {
+                'no-use-before-define': 'off',
+                '@typescript-eslint/no-use-before-define': ['error'],
+                'import/extensions': [
+                    'error',
+                    'ignorePackages',
+                    {
+                        js: 'never',
+                        jsx: 'never',
+                        ts: 'never',
+                        tsx: 'never',
+                    },
+                ],
+                'prettier/prettier': [
+                    'error',
+                    {
+                        trailingComma: 'es5',
+                        singleQuote: true,
+                        printWidth: 100,
+                        bracketSpacing: true,
+                        tabWidth: 4,
+                        // Helps with Windows users facing CLRF eslint/prettier error
+                        endOfLine: 'auto',
+                        jsxBracketSameLine: false,
+                    },
+                ],
+            },
+            plugins: ['@typescript-eslint', 'prettier'],
         },
     ],
 };
