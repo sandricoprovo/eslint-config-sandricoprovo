@@ -1,8 +1,8 @@
 # Eslint & Prettier Configuration
 
-Eslint is awesome because it helps you write consistent code within a project by alerting you to error/mistakes within your code that you've asked it to warn you about, and it'll also fix those issues if you have the write set up. Along with detecting errors, I also like to use the Prettier plugin which helps style your code consistantly. Want to make sure you have spaces arround destructured elements and that you always use single or double quotes, Prettier has your back!
+Eslint is awesome because it helps you write consistent code within a project by alerting you to error/mistakes within your code that you've asked it to warn you about, and it'll also fix those issues if you have the write set up. Along with detecting errors, I also like to use the Prettier plugin which helps style your code consistently. Want to make sure you have spaces around destructured elements and that you always use single or double quotes, Prettier has your back!
 
-I always found myself having to configure this project by project because I didn't have a single source of truth for my configure, and that why I made this set configu project.
+I always found myself having to configure this project by project because I didn't have a single source of truth for my configure, and that why I made this set config project.
 
 Here's how I have this set up currently:
 

@@ -1,57 +1,49 @@
 {
-  "name": "eslint-config-sandricoprovo",
-  "version": "2.0.1",
-  "description": "ESLint and Prettier Config customized by Sandrico Provo.",
-  "main": "index.js",
-  "author": "Sandrico Provo",
-  "license": "MIT",
-  "keywords": [
-    "eslint",
-    "prettier",
-    "config",
-    "javaScript",
-    "linter"
-  ],
-  "homepage": "https://github.com/sandricoprovo/eslint-config-sandricoprovo#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sandricoprovo/eslint-config-sandricoprovo.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sandricoprovo/eslint-config-sandricoprovo/issues"
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix"
-  },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "@typescript-eslint/parser": "^4.15.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.0.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-html": "^6.0.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.1",
-    "prettier": "^2.0.5"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "@typescript-eslint/parser": "^4.15.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.13.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-html": "^6.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.1.2"
-  }
+	"name": "eslint-config-sandricoprovo",
+	"version": "3.0.0",
+	"description": "Eslint + Prettier setup by Sandrico Provo",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sandricoprovo/eslint-config-sandricoprovo.git"
+	},
+	"keywords": [
+		"eslint",
+		"prettier",
+		"javascript",
+		"lint",
+		"typescript",
+		"config",
+		"ecmascript"
+	],
+	"author": "Sandrico Provo",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/sandricoprovo/eslint-config-sandricoprovo/issues"
+	},
+	"homepage": "https://github.com/sandricoprovo/eslint-config-sandricoprovo#readme",
+	"devDependencies": {
+		"@babel/core": "^7.15.5",
+		"@babel/eslint-parser": "^7.15.7",
+		"@babel/preset-react": "^7.14.5",
+		"@types/node": "^16.9.3",
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
+		"@typescript-eslint/parser": "^4.31.1",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-airbnb-typescript": "^14.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-html": "^6.1.2",
+		"eslint-plugin-import": "^2.24.2",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.25.2",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"prettier": "^2.4.1",
+		"typescript": "^4.4.3"
+	}
 }
