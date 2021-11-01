@@ -31,9 +31,9 @@ module.exports = {
             },
         ],
         '@typescript-eslint/no-floating-promises': 'off',
-        'no-use-before-define': 'off',
+        'no-use-before-define': 'warn',
         '@typescript-eslint/no-use-before-define': ['error'],
-        'no-unused-vars': 'off',
+        'no-unused-vars': 'warn',
     },
     parserOptions: {
         project: './tsconfig.json',

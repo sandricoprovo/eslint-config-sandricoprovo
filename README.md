@@ -40,12 +40,23 @@ Extend the eslintrc into your own eslintrc file
 }
 ```
 
+**TypeScript**
+If you want to use this config with TypeScript you can import the TS support using the line below.
+
+```javascript
+{
+  "extends": [
+    "sandricoprovo/typescript"
+  ]
+}
+```
+
 ## If Things Go South
 
 Here is the command you can run on the command line to uninstall everything
 
 ``` markdown
-npm remove eslint-config-sandricoprovo babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
+npm remove eslint-config-sandricoprovo @babel-core @babel/eslint-parser @babel/preset-react @types/node @typescript-eslint/eslint-plugin @typescript-eslint/eslint-parser eslint-config-airbnb-typescript typescript eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
 ```
 
 
