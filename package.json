@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-sandricoprovo",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"description": "Eslint + Prettier setup by Sandrico Provo",
 	"main": "index.js",
 	"scripts": {
@@ -37,6 +37,7 @@
 		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-airbnb-typescript": "^14.0.0",
 		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-typescript": "^2.5.0",
 		"eslint-plugin-html": "^6.1.2",
 		"eslint-plugin-import": "^2.24.2",
 		"eslint-plugin-jsx-a11y": "^6.4.1",
@@ -56,6 +57,7 @@
 		"eslint": "^7.32.0",
 		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-airbnb-typescript": "^14.0.0",
+		"eslint-import-resolver-typescript": "^2.5.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-html": "^6.1.2",
 		"eslint-plugin-import": "^2.24.2",
