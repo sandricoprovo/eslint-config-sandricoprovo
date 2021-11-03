@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['airbnb', 'prettier', 'plugin:import/recommended', 'eslint:recommended'],
+	extends: ['airbnb', 'prettier', 'eslint:recommended'],
 	parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaVersion: 2020,
@@ -17,7 +17,7 @@ module.exports = {
 		jquery: true,
 		jest: true,
 	},
-	plugins: ['html', 'prettier', 'react-hooks', 'import'],
+	plugins: ['html', 'prettier', 'react-hooks'],
 	rules: {
 		'prettier/prettier': [
 			'error',
@@ -26,7 +26,6 @@ module.exports = {
 				singleQuote: true,
 				printWidth: 100,
 				bracketSpacing: true,
-				bracketSameLine: false,
 				tabWidth: 4,
 				useTabs: true,
 				semi: true,

@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-sandricoprovo",
-	"version": "3.0.3",
+	"version": "3.0.4",
 	"description": "Eslint + Prettier setup by Sandrico Provo",
 	"main": "index.js",
 	"scripts": {
