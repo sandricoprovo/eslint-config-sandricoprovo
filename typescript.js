@@ -9,7 +9,6 @@ module.exports = {
 		'airbnb-typescript',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
-		'plugin:import/typescript',
 		// Extend rules from .eslintrc.js
 		'./.eslintrc.js',
 	],
@@ -18,7 +17,7 @@ module.exports = {
 	parserOptions: {
 		project: './tsconfig.json',
 	},
-	plugins: ['import', '@typescript-eslint'],
+	plugins: ['@typescript-eslint'],
 	settings: {
 		'import/parsers': {
 			'@typescript-eslint/parser': ['.ts', '.tsx'],
@@ -26,6 +25,9 @@ module.exports = {
 		'import/resolver': {
 			node: {
 				extensions: ['.ts', '.tsx', '.js', '.jsx'],
+			},
+			typescript: {
+				alwaysTryTypes: true,
 			},
 		},
 		'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
@@ -37,6 +39,7 @@ module.exports = {
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-use-before-define': 'off',
 		'@typescript-eslint/no-floating-promises': 'off',
+		'@typescript-eslint/no-var-requires': 0,
 		'@typescript-eslint/no-misused-promises': [
 			'error',
 			{
