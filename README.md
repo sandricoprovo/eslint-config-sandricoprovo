@@ -29,7 +29,7 @@ npx install-peerdeps --dev eslint-config-sandricoprovo
 **Step 2:**
 Extend the eslintrc into your own eslintrc file
 
-1. Create a .eslintrc file in your project root
+1. Create a .eslintrc.(js/json) file in your project root
 2. Add the following code to your new rc file:
 
 ```javascript
