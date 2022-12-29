@@ -22,6 +22,7 @@ module.exports = {
         import: 0,
         radix: 0,
         indent: 0,
+        quotes: 0,
         'no-use-before-define': 'off',
         'no-debugger': 0,
         'no-alert': 0,
