@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['airbnb', 'prettier', 'eslint:recommended'],
+    extends: ['airbnb', 'eslint:recommended'],
     parser: '@babel/eslint-parser',
     parserOptions: {
         ecmaVersion: 2020,
@@ -17,21 +17,8 @@ module.exports = {
         jquery: true,
         jest: true,
     },
-    plugins: ['html', 'prettier', 'react-hooks'],
+    plugins: ['html', 'react-hooks'],
     rules: {
-        'prettier/prettier': [
-            'error',
-            {
-                trailingComma: 'es5',
-                singleQuote: true,
-                printWidth: 80,
-                bracketSpacing: true,
-                tabWidth: 4,
-                useTabs: false,
-                semi: true,
-                endOfLine: 'auto',
-            },
-        ],
         'no-use-before-define': 'off',
         'no-debugger': 0,
         'no-alert': 0,
