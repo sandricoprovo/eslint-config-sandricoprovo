@@ -14,6 +14,16 @@ To see what packages I've installed check out my [package.json](package.json) fi
 
 ## How to Install
 
+### With `@eslint/config` Package
+
+You can utilize the `@eslint/config` package to initialize the config. This downloads the dependencies and creates an `.eslintrc.js` file for you with the correct extends block. Run the following command for a speedy setup.
+
+```
+npm init @eslint/config -- --config sandricoprovo
+```
+
+### Manual Install
+
 If you want to install this configuration in your next project, follow the steps below:
 
 **Step 1:**
